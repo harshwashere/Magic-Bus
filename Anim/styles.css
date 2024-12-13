@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    padding: 90px 0;
+}
+
+.ball {
+    background-color: dodgerblue;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+}
+
+.main {
+    position: relative;
+    height: 500px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.main > div {
+    border: 1px solid black;
+}
+
+.image {
+    background-image: url('https://img.freepik.com/free-photo/beautiful-shot-snowy-mountains-polar-light_181624-36566.jpg');
+    background-size: cover;
+    height: 400px;
+    width: 800px;
+    transition: all 1s ease;
+}
+
+.image:hover {
+    transform: rotate(360deg);
+    transform: translateX(100px);
+    transform: translateY(-100px);
+}

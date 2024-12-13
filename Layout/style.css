@@ -1,0 +1,22 @@
+.grid-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 95vh;
+    width: 100%;
+}
+
+div {
+    margin: 2px;
+    border-radius: 10px;
+}
+
+.grid-box-1 {
+    background-color: burlywood;
+}
+
+.grid-box-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}

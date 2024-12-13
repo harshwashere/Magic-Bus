@@ -1,0 +1,14 @@
+body {
+    background: url("https://cdn.prod.website-files.com/6009ec8cda7f305645c9d91b/620bd6d655f2044afa28bff4_glassmorphism-p-1080.jpeg");
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.list {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}

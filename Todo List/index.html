@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body>
+    <div class="flex flex-col items-center justify-center gap-3">
+      <div class="text-3xl font-bold p-6 border-b-2 border-black w-full">
+        To Do List
+      </div>
+      <div class="flex items-center justify-center w-full gap-4 flex-wrap p-5">
+        <input
+          class="rounded-md p-3 w-1/2 outline-none backdrop-blur-md bg-none border-b-2 border-black"
+          type="text"
+          placeholder="Enter your task"
+          name=""
+          id="inp"
+        />
+        <button
+          class="rounded-xl px-7 py-3 w-auto bg-sky-300 border-b-2 border-black"
+          type="submit"
+          onclick="add()"
+        >
+          Add to list
+        </button>
+      </div>
+      <div
+        class="flex items-start justify-evenly h-full w-screen px-8 py-4 gap-2"
+      >
+        <!-- Pending Tasks -->
+        <div
+          class="pending rounded-xl text h-auto p-5 shadow-lg w-1/2 text-center backdrop-blur-md max-sm:px-2"
+        >
+          <h2 class="w-full text-xl font-bold p-2 text-white">Pending Tasks</h2>
+          <div
+            class="pending-tasks ul text-red italic text-2xl list-decimal"
+          ></div>
+        </div>
+        <!-- Completed Tasks -->
+        <div
+          class="complete rounded-xl text-white text h-auto p-5 shadow-lg w-1/2 text-center backdrop-blur-md max-md:px-2"
+        >
+          <h2 class="w-full text-xl font-bold p-2 text-white">
+            Completed Tasks
+          </h2>
+          <div class="completed-tasks ul text-green-700 italic text-2xl"></div>
+        </div>
+      </div>
+    </div>
+    <script src="todo.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.stopwatch {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: skyblue;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 40px;
+    background-color: bisque;
+    border-radius: 30px;
+    box-shadow: 7px 7px 19px rgb(0, 0, 0);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.num {
+    display: flex;
+}
+
+.btn {
+    display: flex;
+    gap: 30px;
+}
+
+.start {
+    background: green;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 3px 3px 5px gray;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.stop {
+    background: red;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 3px 3px 5px gray;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.reset {
+    background: yellow;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 3px 3px 5px gray;
+    cursor: pointer;
+    font-size: 20px;
+}
